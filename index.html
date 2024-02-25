@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayIt - Welcome to the music paradise</title>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" 
+        rel="stylesheet" 
+    />
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="PlayIt">PlayIt</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>Favourite English Songs</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Unknown Brain - Superhero</span>
+                    <span class="songlistplay"><span class="timestamp">05:00 <i id="0" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Perfect - Ed Sheeran</span>
+                    <span class="songlistplay"><span class="timestamp">05:00 <i id="1" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">DJ Snake ft Justin Bieber - Let Me Love You</span>
+                    <span class="songlistplay"><span class="timestamp">05:00 <i id="2" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">James Arthur - Say you won't let go</span>
+                    <span class="songlistplay"><span class="timestamp">05:00 <i id="3" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Nightcore - Alan Walker & Farruko - On My Way</span>
+                    <span class="songlistplay"><span class="timestamp">05:00 <i id="4" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Wiz Khalifa ft. Charlie Puth - See You Again</span>
+                    <span class="songlistplay"><span class="timestamp">05:00 <i id="5" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Something Just Like This - The Chainsmokers</span>
+                    <span class="songlistplay"><span class="timestamp">05:00 <i id="6" class="fa-regular songItemPlay fa-circle-play"></i></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <!--fontawesome icons-->  <!--fa-3x To increase the size of an icon-->
+            <i class="fa-solid fa-2x fa-backward-fast" id="previous"></i>
+            <i class="fa-regular fa-2x fa-circle-play" id="masterPlay"></i>
+            <i class="fa-solid fa-2x fa-forward-fast" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="play5.gif" width="80px" id="gif" alt=""><span id="masterSongName">   Unknown Brain - Superhero</span> 
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/5faff5f495.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
